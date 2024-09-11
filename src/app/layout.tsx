@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { Nunito_Sans } from "next/font/google";
+import { Providers } from "./providers";
 
 // If loading a variable font, you don't need to specify the font weight
 const nunito_sans = Nunito_Sans({
@@ -21,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={nunito_sans.className}>
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
