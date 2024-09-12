@@ -1,3 +1,6 @@
+import Categories from "@/components/Categories/Categories";
+import FlashSale from "@/components/FlashSale/FlashSale";
+import TopeRated from "@/components/TopRated/TopeRated";
 import AnimatedText from "@/components/ui/AnimatedText";
 import Container from "@/components/ui/Container";
 import HeroSlider from "@/components/ui/HeroSlider";
@@ -11,13 +14,10 @@ export default function Home() {
         <HeroSlider />
       </div>
       <Container>
-        <div>
-          {" "}
-          <h1 className="text-xl animate-flip-down">
-            Whereas disregard and contempt for human rights have resulted
-          </h1>
-          <AnimatedText text="animated text with framer-motion"/>
-        </div>
+        <FlashSale />
+
+        <Categories />
+        <TopeRated />
       </Container>
     </div>
   );
