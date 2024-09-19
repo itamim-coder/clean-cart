@@ -1,4 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+/* styles/globals.css */
+
+.nav-for-slider .swiper-slide {
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.nav-for-slider .swiper-slide img {
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.nav-for-slider .swiper-slide-thumb-active img {
+  border-color: rgb(79 70 229);
+}
